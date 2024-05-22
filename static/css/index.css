@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(235, 235, 235);
+}
+
+
+.body{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+h1{
+    font-size: 35px;
+    color:white;
+    cursor: pointer;
+    background-color: rgb(59, 73, 224);
+}
+.intro{
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    font-family: 'courier new','courier','monospace';
+    font-style: oblique;
+}
+.btn{
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    background-color: black;
+    width: 70px;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    text-align: center;
+}
+.btn:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:80%;
+}
+.shc-mid-grad{
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 2px gray;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    background-color: white;
+}
+.search-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+}
+.search-itmes{
+    background-color: rgb(78, 78, 78);
+    border:none;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    color: white;
+    font-style: oblique;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: monospace;
+}
+
+.footer{
+    background-color: rgb(66, 66, 66);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10%;
+}
+.footer-p{
+    color: rgb(0, 81, 255);
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+}
+.tags-t{
+    font-size: 20px;
+    color: aliceblue;
+    font-style: oblique;
+}
+@media (max-width:700px){
+    .navbar{
+        width: 250px;
+    }
+    .tags-t{
+        font-size: 15px;
+    }
+    .search-item{
+        width: 95%;
+        flex-direction: column;
+    }
+    .shc-mid-grad{
+        font-size: 15px;
+        width: 95%;
+    }
+}

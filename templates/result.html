@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{data1}}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/reult.css')}}">
+    <link rel="shortcut icon" href="{{url_for('static' ,filename ='png/search.png')}}" type="image/x-icon">
+</head>
+<body>
+        <div class="back-search">
+            <img src="{{url_for('static',filename = 'png/back2.png')}}" id="wtype" class="back">
+            <button class="back">
+                Search
+            </button>
+        </div>
+
+
+        <div class="online-result">
+            <div class="google">
+                {{data2}}
+            </div>
+        </div>
+
+        <div class="links-mate">
+            <p class="my-ans">{{data1}}</p>
+            <div class="links">
+                {%for i in data3%}
+                <a href="{{i}}" target="_blank" class="normalize">{{i}}</a>
+                {%endfor%}
+            </div>
+        </div>
+    <script src="{{url_for('static',filename='js/res.js')}}"></script>
+    <script src="{{url_for('static',filename='js/to_check_wik.js')}}"></script>
+</body>
+</html>

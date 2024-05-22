@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QURE</title>
+    <link rel="shortcut icon" href="{{url_for('static',filename = 'png/search.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/footerpol.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="body">
+            <div class="intro">
+                <h1>Qure</h1>
+                <h1 onclick="show()" class="btn">Menu</h1>
+            </div>
+            <form class="search" action="{{url_for('Search_Return')}}" method="post">
+                <div class="search-item">
+                      <input type="search" class="shc-mid-grad" spellcheck="false" value="" name="QURE">
+                      <button class="search-itmes" type="submit">Search</button>
+                </div>
+            </form>
+            <div class="footer">
+                <p class="footer-p">Qure</p>
+
+                <p class="tags-t">CopyRight All right Reserved-2024</p>
+                <div class="policies">
+                    <div class="human">
+                        <img src="{{url_for('static',filename = 'png/policy_image.png')}}" class="all-image-icon" id="policy_">
+                        <p class="image-text" id="policy_">More</p>
+                    </div>
+                    <div class="about">
+                        <img src="{{url_for('static',filename = 'png/contact.png')}}" class="all-image-icon" id="contact">
+                        <p class="image-text" id="contact">Contact</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static',filename = 'js/deafualt.js')}}"></script>
+</body>
+</html>
